@@ -10,7 +10,7 @@ class MeanShifter {
 		}
 
 		void setBandWidth(int Hs, int Hr);
-		void perform(const cv::Mat &src, cv::Mat &dst, int iteration);
+		void perform(const cv::Mat &src, cv::Mat &dst, int iteration, int thread);
 
 	private:
 		int Hs_;
