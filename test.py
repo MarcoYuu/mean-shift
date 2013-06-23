@@ -13,6 +13,6 @@ for Hs in [8, 16, 32, 64]:
 			print command
 			os.system(command);
 
-dir_name =datetime.datetime.today().strftime("%Y-%m-%d_%H:%M:%S")
+dir_name =datetime.datetime.today().strftime("%Y-%m-%d_%H-%M-%S")
 os.system("mkdir result/"+dir_name)
-os.system("mv *.png /result/"+dir_name)
+os.system("mv *.png ./result/"+dir_name)
