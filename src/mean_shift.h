@@ -4,7 +4,7 @@
 
 class MeanShifter {
 	public:
-		MeanShifter() {
+		MeanShifter() :Hs_(8), Hr_(16) {
 		}
 		~MeanShifter() {
 		}
@@ -16,47 +16,7 @@ class MeanShifter {
 		int Hs_;
 		int Hr_;
 
-		struct PosColor {
-			int x, y, r, g, b;
-
-			void operator *=(int v) {
-				x *= v;
-				y *= v;
-				r *= v;
-				g *= v;
-				b *= v;
-			}
-			void operator +=(const PosColor &v) {
-				x += v.x;
-				y += v.y;
-				r += v.r;
-				g += v.g;
-				b += v.b;
-			}
-			PosColor operator /(int v) const {
-				PosColor result;
-				result.x = this->x / v;
-				result.y = this->y / v;
-				result.r = this->r / v;
-				result.g = this->g / v;
-				result.b = this->b / v;
-				return result;
-			}
-			PosColor operator *(int v) const {
-				PosColor result;
-				result.x = this->x * v;
-				result.y = this->y * v;
-				result.r = this->r * v;
-				result.g = this->g * v;
-				result.b = this->b * v;
-				return result;
-			}
-
-			bool operator ==(const PosColor &v) const {
-				return v.x == this->x && v.y == this->y && v.r == this->r && v.g == this->g && v.b == this->b;
-			}
-		};
-
+		struct PosColor;
 		PosColor update_cood(const PosColor &p, const cv::Mat &src);
 
 		int kernel_position(int ref_x, int ref_y, int x, int y, int h);
