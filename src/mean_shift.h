@@ -5,11 +5,20 @@
 class MeanShifter {
 	public:
 		MeanShifter() :Hs_(8), Hr_(16) {
+			profile_position = &MeanShifter::profile_position_fukunaga;
+			profile_color = &MeanShifter::profile_color_fukunaga;
 		}
 		~MeanShifter() {
 		}
 
+		enum Kernel{
+			UNIT_BALL,
+			FUKUNAGA,
+			GAUSSIAN
+		};
+
 		void setBandWidth(int Hs, int Hr);
+		void setKernel(Kernel type);
 		void perform(const cv::Mat &src, cv::Mat &dst, int iteration, int thread);
 
 	private:
@@ -19,9 +28,18 @@ class MeanShifter {
 		struct PosColor;
 		PosColor update_cood(const PosColor &p, const cv::Mat &src);
 
-		int kernel_position(int ref_x, int ref_y, int x, int y, int h);
-		int kernel_color(int ref_r, int ref_g, int ref_b, int r, int g, int b, int h);
+		float kernel_position(int ref_x, int ref_y, int x, int y, int h);
+		float kernel_color(int ref_r, int ref_g, int ref_b, int r, int g, int b, int h);
 
-		int profile_position(int val);
-		int profile_color(int val);
+		float (*profile_position)(float val);
+		float (*profile_color)(float val);
+
+		static float profile_position_fukunaga(float val);
+		static float profile_color_fukunaga(float val);
+
+		static float profile_position_unitball(float val);
+		static float profile_color_unitball(float val);
+
+		static float profile_position_gaussian(float val);
+		static float profile_color_gaussian(float val);
 };

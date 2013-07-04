@@ -1,0 +1,109 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ARCHITECTURE_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	181;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	184;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	187;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	190;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	194;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	12;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	15;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	18;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	21;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	24;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	27;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	30;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	34;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	36;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	38;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	42;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	45;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	48;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	51;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	54;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	57;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	60;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	65;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	68;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	74;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	77;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	80;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	9;"	d	file:
+FUKUNAGA	src/mean_shift.h	/^			FUKUNAGA,$/;"	e	enum:MeanShifter::Kernel
+GAUSSIAN	src/mean_shift.h	/^			GAUSSIAN$/;"	e	enum:MeanShifter::Kernel
+Hr_	src/mean_shift.h	/^		int Hr_;$/;"	m	class:MeanShifter
+Hs_	src/mean_shift.h	/^		int Hs_;$/;"	m	class:MeanShifter
+Kernel	src/mean_shift.h	/^		enum Kernel{$/;"	g	class:MeanShifter
+MeanShifter	src/mean_shift.h	/^class MeanShifter {$/;"	c
+MeanShifter	src/mean_shift.h	/^		MeanShifter() :Hs_(8), Hr_(16) {$/;"	f	class:MeanShifter
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	101;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	104;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	107;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	110;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	113;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	116;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	119;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	122;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	125;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	128;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	134;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	137;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	140;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	143;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	146;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	149;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	152;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	155;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	158;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	161;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	164;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	167;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	170;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	92;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	95;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	98;"	d	file:
+PosColor	src/mean_shift.cpp	/^struct MeanShifter::PosColor {$/;"	s	class:MeanShifter	file:
+UNIT_BALL	src/mean_shift.h	/^			UNIT_BALL,$/;"	e	enum:MeanShifter::Kernel
+b	src/mean_shift.cpp	/^	float x, y, r, g, b;$/;"	m	struct:MeanShifter::PosColor	file:
+command	test.py	/^			command = ".\/build\/mshift "+sys.argv[1]+" "+str(Hs)+" "+str(Hr)+" "+str(loop)+" 8"$/;"	v
+command	test_all.py	/^	command = ".\/test.py "+ img +" | tee -a log"$/;"	v
+dir_name	test.py	/^dir_name =datetime.datetime.today().strftime("%Y-%m-%d_%H-%M-%S")$/;"	v
+g	src/mean_shift.cpp	/^	float x, y, r, g, b;$/;"	m	struct:MeanShifter::PosColor	file:
+group_	src/mean_shift.cpp	/^		boost::thread_group group_;$/;"	m	class:thread_pool	file:
+info_arch	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v
+info_compiler	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v
+info_platform	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v
+io_service_	src/mean_shift.cpp	/^		boost::asio::io_service& io_service_;$/;"	m	class:thread_pool	file:
+kernel_color	src/mean_shift.cpp	/^float MeanShifter::kernel_color($/;"	f	class:MeanShifter
+kernel_position	src/mean_shift.cpp	/^float MeanShifter::kernel_position($/;"	f	class:MeanShifter
+main	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^int main(int argc, char* argv[])$/;"	f
+main	src/mshift.cpp	/^int main(int argc, char *argv[]){$/;"	f
+operator *=	src/mean_shift.cpp	/^void MeanShifter::PosColor::operator *=(T v) {$/;"	f	class:MeanShifter::PosColor
+operator *	src/mean_shift.cpp	/^MeanShifter::PosColor MeanShifter::PosColor::operator *(T v) const {$/;"	f	class:MeanShifter::PosColor
+operator +=	src/mean_shift.cpp	/^void MeanShifter::PosColor::operator +=(const MeanShifter::PosColor &v) {$/;"	f	class:MeanShifter::PosColor
+operator /	src/mean_shift.cpp	/^MeanShifter::PosColor MeanShifter::PosColor::operator \/(T v) const {$/;"	f	class:MeanShifter::PosColor
+operator ==	src/mean_shift.cpp	/^bool MeanShifter::PosColor::operator ==(const MeanShifter::PosColor &v) const {$/;"	f	class:MeanShifter::PosColor
+perform	src/mean_shift.cpp	/^void MeanShifter::perform(const Mat &src, Mat &dst, int iteration, int thread) {$/;"	f	class:MeanShifter
+post	src/mean_shift.cpp	/^		template <class F> void post(F f){$/;"	f	class:thread_pool
+profile_color_fukunaga	src/mean_shift.cpp	/^float MeanShifter::profile_color_fukunaga(float val){$/;"	f	class:MeanShifter
+profile_color_gaussian	src/mean_shift.cpp	/^float MeanShifter::profile_color_gaussian(float val){$/;"	f	class:MeanShifter
+profile_color_unitball	src/mean_shift.cpp	/^float MeanShifter::profile_color_unitball(float val){$/;"	f	class:MeanShifter
+profile_color	src/mean_shift.h	/^		float (*profile_color)(float val);$/;"	m	class:MeanShifter
+profile_position_fukunaga	src/mean_shift.cpp	/^float MeanShifter::profile_position_fukunaga(float val){$/;"	f	class:MeanShifter
+profile_position_gaussian	src/mean_shift.cpp	/^float MeanShifter::profile_position_gaussian(float val){$/;"	f	class:MeanShifter
+profile_position_unitball	src/mean_shift.cpp	/^float MeanShifter::profile_position_unitball(float val){$/;"	f	class:MeanShifter
+profile_position	src/mean_shift.h	/^		float (*profile_position)(float val);$/;"	m	class:MeanShifter
+r	src/mean_shift.cpp	/^	float x, y, r, g, b;$/;"	m	struct:MeanShifter::PosColor	file:
+setBandWidth	src/mean_shift.cpp	/^void MeanShifter::setBandWidth(int Hs, int Hr) {$/;"	f	class:MeanShifter
+setKernel	src/mean_shift.cpp	/^void MeanShifter::setKernel(MeanShifter::Kernel type){$/;"	f	class:MeanShifter
+thread_pool	src/mean_shift.cpp	/^class thread_pool {$/;"	c	file:
+thread_pool	src/mean_shift.cpp	/^		thread_pool(boost::asio::io_service& io_service, std::size_t size)$/;"	f	class:thread_pool
+update_cood	src/mean_shift.cpp	/^MeanShifter::PosColor MeanShifter::update_cood(const PosColor &p, const Mat &src) {$/;"	f	class:MeanShifter
+work_	src/mean_shift.cpp	/^		boost::shared_ptr<boost::asio::io_service::work> work_;$/;"	m	class:thread_pool	file:
+x	src/mean_shift.cpp	/^	float x, y, r, g, b;$/;"	m	struct:MeanShifter::PosColor	file:
+y	src/mean_shift.cpp	/^	float x, y, r, g, b;$/;"	m	struct:MeanShifter::PosColor	file:
+~MeanShifter	src/mean_shift.h	/^		~MeanShifter() {$/;"	f	class:MeanShifter
+~thread_pool	src/mean_shift.cpp	/^		~thread_pool(){$/;"	f	class:thread_pool

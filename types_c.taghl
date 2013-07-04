@@ -1,0 +1,9 @@
+syn keyword CTagsStructure PosColor
+syn keyword CTagsMember Hr_ b g io_service_ profile_position profile_color work_ y x group_ r Hs_
+syn keyword CTagsConstant info_compiler info_arch info_platform
+syn keyword CTagsEnumeratorName Kernel
+syn keyword CTagsEnumerationValue UNIT_BALL FUKUNAGA GAUSSIAN
+syn keyword CTagsFunction profile_position_gaussian profile_position_unitball profile_position_fukunaga thread_pool profile_color_gaussian perform main profile_color_unitball kernel_position setBandWidth post profile_color_fukunaga update_cood setKernel MeanShifter kernel_color
+syn keyword CTagsDefinedName PLATFORM_ID COMPILER_ID ARCHITECTURE_ID
+syn keyword CTagsClass thread_pool MeanShifter
+
