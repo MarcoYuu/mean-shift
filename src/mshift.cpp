@@ -37,7 +37,7 @@ int main(int argc, char *argv[]){
 			kernel = MeanShifter::UNIT_BALL;
 		else if(k_type == "gaussian")
 			kernel = MeanShifter::GAUSSIAN;
-		cout << "kernel: " << kernel << endl; 
+		cout << "kernel: " << kernel << endl;
 	}
 
 	// 画像の読み込み
@@ -49,15 +49,15 @@ int main(int argc, char *argv[]){
 	shifter.setBandWidth(Hs, Hr);
 	shifter.setKernel(kernel);
 
-	timer::cpu_timer timer;	
+	timer::cpu_timer timer;
 	shifter.perform(src, dst, iterate, thread);
 	timer.stop();
 
 	cout << timer.format() <<endl;
 
 	// 出力
-	cv::imwrite((boost::format("%d_s%d_r%d_i%d_k%d_th%d.png") 
-				% src.cols % Hs % Hr % iterate % kernel % thread).str(), 
+	cv::imwrite((boost::format("%d_s%d_r%d_i%d_k%d_th%d.png")
+				% src.cols % Hs % Hr % iterate % kernel % thread).str(),
 			dst, std::vector<int>({CV_IMWRITE_PNG_COMPRESSION, 1}));
 
 	return 0;

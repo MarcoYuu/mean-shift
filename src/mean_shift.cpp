@@ -13,31 +13,31 @@ using namespace cv;
 
 // http://d.hatena.ne.jp/faith_and_brave/20110408/1302248501
 class thread_pool {
-	private:
-		boost::asio::io_service& io_service_;
-		boost::shared_ptr<boost::asio::io_service::work> work_;
-		boost::thread_group group_;
+private:
+	boost::asio::io_service& io_service_;
+	boost::shared_ptr<boost::asio::io_service::work> work_;
+	boost::thread_group group_;
 
-	public:
-		thread_pool(boost::asio::io_service& io_service, std::size_t size)
-			: io_service_(io_service)
-		{
-			work_.reset(new boost::asio::io_service::work(io_service_));
+public:
+	thread_pool(boost::asio::io_service& io_service, std::size_t size)
+		: io_service_(io_service)
+	{
+		work_.reset(new boost::asio::io_service::work(io_service_));
 
-			for (std::size_t i = 0; i < size; ++i) {
-				group_.create_thread(boost::bind(
-							&boost::asio::io_service::run, &io_service_));
-			}
+		for (std::size_t i = 0; i < size; ++i) {
+			group_.create_thread(boost::bind(
+						&boost::asio::io_service::run, &io_service_));
 		}
+	}
 
-		~thread_pool(){
-			work_.reset();
-			group_.join_all();
-		}
+	~thread_pool(){
+		work_.reset();
+		group_.join_all();
+	}
 
-		template <class F> void post(F f){
-			io_service_.post(f);
-		}
+	template <class F> void post(F f){
+		io_service_.post(f);
+	}
 };
 
 struct MeanShifter::PosColor {
@@ -92,7 +92,7 @@ MeanShifter::PosColor MeanShifter::PosColor::operator *(T v) const {
 }
 
 bool MeanShifter::PosColor::operator ==(const MeanShifter::PosColor &v) const {
-	return v.x == this->x && v.y == this->y && 
+	return v.x == this->x && v.y == this->y &&
 		v.r == this->r && v.g == this->g && v.b == this->b;
 }
 
@@ -103,18 +103,18 @@ void MeanShifter::setBandWidth(int Hs, int Hr) {
 
 void MeanShifter::setKernel(MeanShifter::Kernel type){
 	switch(type){
-		case UNIT_BALL:
-			profile_position = &MeanShifter::profile_position_unitball;
-			profile_color = &MeanShifter::profile_color_unitball;
-			break;
-		case FUKUNAGA:
-			profile_position = &MeanShifter::profile_position_fukunaga;
-			profile_color = &MeanShifter::profile_color_fukunaga;
-			break;
-		case GAUSSIAN:
-			profile_position = &MeanShifter::profile_position_gaussian;
-			profile_color = &MeanShifter::profile_color_gaussian;
-			break;
+	case UNIT_BALL:
+		profile_position = &MeanShifter::profile_position_unitball;
+		profile_color = &MeanShifter::profile_color_unitball;
+		break;
+	case FUKUNAGA:
+		profile_position = &MeanShifter::profile_position_fukunaga;
+		profile_color = &MeanShifter::profile_color_fukunaga;
+		break;
+	case GAUSSIAN:
+		profile_position = &MeanShifter::profile_position_gaussian;
+		profile_color = &MeanShifter::profile_color_gaussian;
+		break;
 	}
 }
 
@@ -193,16 +193,16 @@ MeanShifter::PosColor MeanShifter::update_cood(const PosColor &p, const Mat &src
 float MeanShifter::kernel_position(
 		int ref_x, int ref_y, int x, int y, int h) {
 	return profile_position(sqrt(
-				pow((float) (ref_x - x), 2.0f) + 
-				pow((float) (ref_y - y), 2.0f)) 
+				pow((float) (ref_x - x), 2.0f) +
+				pow((float) (ref_y - y), 2.0f))
 			/ (float) h);
 }
 
 float MeanShifter::kernel_color(
 		int ref_r, int ref_g, int ref_b, int r, int g, int b, int h) {
 	return profile_color(sqrt(
-				pow((float) (ref_r - r), 2.0f) + 
-				pow((float) (ref_g - g), 2.0f) + 
+				pow((float) (ref_r - r), 2.0f) +
+				pow((float) (ref_g - g), 2.0f) +
 				pow((float) (ref_b - b), 2.0f))
 			/ (float) h);
 }
