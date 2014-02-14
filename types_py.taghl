@@ -1,2 +1,2 @@
-syn keyword CTagsGlobalVariable dir_name command
+syn keyword CTagsGlobalVariable name_mod dir_name command loop
 

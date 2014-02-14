@@ -32,13 +32,15 @@ COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	74;"	d	file:
 COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	77;"	d	file:
 COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	80;"	d	file:
 COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	9;"	d	file:
-FUKUNAGA	src/mean_shift.h	/^			FUKUNAGA,$/;"	e	enum:MeanShifter::Kernel
-GAUSSIAN	src/mean_shift.h	/^			GAUSSIAN$/;"	e	enum:MeanShifter::Kernel
-Hr_	src/mean_shift.h	/^		int Hr_;$/;"	m	class:MeanShifter
-Hs_	src/mean_shift.h	/^		int Hs_;$/;"	m	class:MeanShifter
-Kernel	src/mean_shift.h	/^		enum Kernel{$/;"	g	class:MeanShifter
+FUKUNAGA	src/mean_shift.h	/^		FUKUNAGA,$/;"	e	enum:MeanShifter::Kernel
+GAUSSIAN	src/mean_shift.h	/^		GAUSSIAN$/;"	e	enum:MeanShifter::Kernel
+Hr_	src/mean_shift.h	/^	int Hr_;$/;"	m	class:MeanShifter
+Hr	src/mshift.cpp	/^	int Hr = lexical_cast<int>(argv[3]);$/;"	l
+Hs_	src/mean_shift.h	/^	int Hs_;$/;"	m	class:MeanShifter
+Hs	src/mshift.cpp	/^	int Hs = lexical_cast<int>(argv[2]);$/;"	l
+Kernel	src/mean_shift.h	/^	enum Kernel{$/;"	g	class:MeanShifter
 MeanShifter	src/mean_shift.h	/^class MeanShifter {$/;"	c
-MeanShifter	src/mean_shift.h	/^		MeanShifter() :Hs_(8), Hr_(16) {$/;"	f	class:MeanShifter
+MeanShifter	src/mean_shift.h	/^	MeanShifter() :Hs_(8), Hr_(16) {$/;"	f	class:MeanShifter
 PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	101;"	d	file:
 PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	104;"	d	file:
 PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	107;"	d	file:
@@ -66,44 +68,113 @@ PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	92;"	d	file:
 PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	95;"	d	file:
 PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	98;"	d	file:
 PosColor	src/mean_shift.cpp	/^struct MeanShifter::PosColor {$/;"	s	class:MeanShifter	file:
-UNIT_BALL	src/mean_shift.h	/^			UNIT_BALL,$/;"	e	enum:MeanShifter::Kernel
+PosColor	src/mean_shift.h	/^	struct PosColor;$/;"	x
+UNIT_BALL	src/mean_shift.h	/^		UNIT_BALL,$/;"	e	enum:MeanShifter::Kernel
+b	src/mean_shift.cpp	/^				float b = src.data[index * 3 + 2];$/;"	l
+b	src/mean_shift.cpp	/^			float b = src.data[index * 3 + 2];$/;"	l
 b	src/mean_shift.cpp	/^	float x, y, r, g, b;$/;"	m	struct:MeanShifter::PosColor	file:
+c	src/mean_shift.cpp	/^			PosColor c = {(float) x, (float)y, r, g, b };$/;"	l
 command	test.py	/^			command = ".\/build\/mshift "+sys.argv[1]+" "+str(Hs)+" "+str(Hr)+" "+str(loop)+" 8"$/;"	v
 command	test_all.py	/^	command = ".\/test.py "+ img +" | tee -a log"$/;"	v
+command	test_inu.py	/^		command = ".\/build\/mshift "+sys.argv[1]+" "+str(Hs)+" "+str(Hr)+" "+str(loop)+" 8 fukunaga"$/;"	v
+command	test_inu.py	/^		command = ".\/build\/mshift "+sys.argv[1]+" "+str(Hs)+" "+str(Hr)+" "+str(loop)+" 8 gaussian"$/;"	v
+command	test_inu.py	/^		command = ".\/build\/mshift "+sys.argv[1]+" "+str(Hs)+" "+str(Hr)+" "+str(loop)+" 8 unitball"$/;"	v
 dir_name	test.py	/^dir_name =datetime.datetime.today().strftime("%Y-%m-%d_%H-%M-%S")$/;"	v
+dst	src/mshift.cpp	/^	Mat dst(src.rows, src.cols, CV_8UC3);$/;"	p	file:
+endl	src/mean_shift.cpp	/^	cout <<"]" <<endl;$/;"	l
+endl	src/mshift.cpp	/^		cout << "arg error" <<endl;$/;"	l
+endl	src/mshift.cpp	/^		cout << "kernel: " << kernel << endl;$/;"	l
+endl	src/mshift.cpp	/^		cout << k_type << endl;$/;"	l
+file_name	src/mshift.cpp	/^	string file_name = argv[1];$/;"	l
+flush	src/mean_shift.cpp	/^	cout <<"[" << flush;$/;"	l
+g	src/mean_shift.cpp	/^				float g = src.data[index * 3 + 1];$/;"	l
+g	src/mean_shift.cpp	/^			float g = src.data[index * 3 + 1];$/;"	l
 g	src/mean_shift.cpp	/^	float x, y, r, g, b;$/;"	m	struct:MeanShifter::PosColor	file:
-group_	src/mean_shift.cpp	/^		boost::thread_group group_;$/;"	m	class:thread_pool	file:
+group_	src/mean_shift.cpp	/^	boost::thread_group group_;$/;"	m	class:thread_pool	file:
+imwrite	src/mshift.cpp	/^	cv::imwrite((boost::format("%d_s%d_r%d_i%d_k%d_th%d.png")$/;"	p	class:cv	file:
+index	src/mean_shift.cpp	/^				int index = y * src.cols + x;$/;"	l
+index	src/mean_shift.cpp	/^			int index = y * src.cols + x;$/;"	l
 info_arch	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v
 info_compiler	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v
 info_platform	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v
-io_service_	src/mean_shift.cpp	/^		boost::asio::io_service& io_service_;$/;"	m	class:thread_pool	file:
+io_service_	src/mean_shift.cpp	/^	boost::asio::io_service& io_service_;$/;"	m	class:thread_pool	file:
+io_service	src/mean_shift.cpp	/^		boost::asio::io_service io_service;$/;"	l
+iterate	src/mshift.cpp	/^	int iterate = lexical_cast<int>(argv[4]);$/;"	l
+join_all	src/mean_shift.cpp	/^		group_.join_all();$/;"	p	file:
+k_type	src/mshift.cpp	/^		string k_type = argv[6];$/;"	l
 kernel_color	src/mean_shift.cpp	/^float MeanShifter::kernel_color($/;"	f	class:MeanShifter
+kernel_color	src/mean_shift.h	/^	float kernel_color(int ref_r, int ref_g, int ref_b, int r, int g, int b, int h);$/;"	p	class:MeanShifter
 kernel_position	src/mean_shift.cpp	/^float MeanShifter::kernel_position($/;"	f	class:MeanShifter
+kernel_position	src/mean_shift.h	/^	float kernel_position(int ref_x, int ref_y, int x, int y, int h);$/;"	p	class:MeanShifter
+kernel	src/mshift.cpp	/^	MeanShifter::Kernel kernel = MeanShifter::FUKUNAGA;$/;"	l
+k	src/mean_shift.cpp	/^			float k = kernel_position(p.x, p.y, c.x, c.y, Hs_)$/;"	l
+loop	test_inu.py	/^loop = 10$/;"	v
 main	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^int main(int argc, char* argv[])$/;"	f
 main	src/mshift.cpp	/^int main(int argc, char *argv[]){$/;"	f
+name_mod	rename.py	/^	name_mod = name.replace("k0_th8", "unitball")$/;"	v
+name_mod	rename.py	/^	name_mod = name_mod.replace("k1_th8", "fukunaga")$/;"	v
+name_mod	rename.py	/^	name_mod = name_mod.replace("k2_th8", "gaussian")$/;"	v
 operator *=	src/mean_shift.cpp	/^void MeanShifter::PosColor::operator *=(T v) {$/;"	f	class:MeanShifter::PosColor
+operator *=	src/mean_shift.cpp	/^	template<typename T> void operator *=(T v);$/;"	p	struct:MeanShifter::PosColor	file:
 operator *	src/mean_shift.cpp	/^MeanShifter::PosColor MeanShifter::PosColor::operator *(T v) const {$/;"	f	class:MeanShifter::PosColor
+operator *	src/mean_shift.cpp	/^	template<typename T> PosColor operator *(T v) const;$/;"	p	struct:MeanShifter::PosColor	file:
 operator +=	src/mean_shift.cpp	/^void MeanShifter::PosColor::operator +=(const MeanShifter::PosColor &v) {$/;"	f	class:MeanShifter::PosColor
+operator +=	src/mean_shift.cpp	/^	void operator +=(const PosColor &v);$/;"	p	struct:MeanShifter::PosColor	file:
 operator /	src/mean_shift.cpp	/^MeanShifter::PosColor MeanShifter::PosColor::operator \/(T v) const {$/;"	f	class:MeanShifter::PosColor
+operator /	src/mean_shift.cpp	/^	template<typename T> PosColor operator \/(T v) const;$/;"	p	struct:MeanShifter::PosColor	file:
 operator ==	src/mean_shift.cpp	/^bool MeanShifter::PosColor::operator ==(const MeanShifter::PosColor &v) const {$/;"	f	class:MeanShifter::PosColor
+operator ==	src/mean_shift.cpp	/^	bool operator ==(const PosColor &v) const;$/;"	p	struct:MeanShifter::PosColor	file:
+per_100	src/mean_shift.cpp	/^	int per_100 = src.cols*src.rows\/100;$/;"	l
 perform	src/mean_shift.cpp	/^void MeanShifter::perform(const Mat &src, Mat &dst, int iteration, int thread) {$/;"	f	class:MeanShifter
-post	src/mean_shift.cpp	/^		template <class F> void post(F f){$/;"	f	class:thread_pool
+perform	src/mean_shift.h	/^	void perform(const cv::Mat &src, cv::Mat &dst, int iteration, int thread);$/;"	p	class:MeanShifter
+perform	src/mshift.cpp	/^	shifter.perform(src, dst, iterate, thread);$/;"	p	file:
+pool	src/mean_shift.cpp	/^		thread_pool pool(io_service, thread);$/;"	p	file:
+post	src/mean_shift.cpp	/^	template <class F> void post(F f){$/;"	f	class:thread_pool
+post	src/mean_shift.cpp	/^		io_service_.post(f);$/;"	p	file:
+pre_	src/mean_shift.cpp	/^				PosColor pre_ = { (float)x, (float)y, r, g, b };$/;"	l
 profile_color_fukunaga	src/mean_shift.cpp	/^float MeanShifter::profile_color_fukunaga(float val){$/;"	f	class:MeanShifter
+profile_color_fukunaga	src/mean_shift.h	/^	static float profile_color_fukunaga(float val);$/;"	p	class:MeanShifter
 profile_color_gaussian	src/mean_shift.cpp	/^float MeanShifter::profile_color_gaussian(float val){$/;"	f	class:MeanShifter
+profile_color_gaussian	src/mean_shift.h	/^	static float profile_color_gaussian(float val);$/;"	p	class:MeanShifter
 profile_color_unitball	src/mean_shift.cpp	/^float MeanShifter::profile_color_unitball(float val){$/;"	f	class:MeanShifter
-profile_color	src/mean_shift.h	/^		float (*profile_color)(float val);$/;"	m	class:MeanShifter
+profile_color_unitball	src/mean_shift.h	/^	static float profile_color_unitball(float val);$/;"	p	class:MeanShifter
+profile_color	src/mean_shift.h	/^	float (*profile_color)(float val);$/;"	m	class:MeanShifter
 profile_position_fukunaga	src/mean_shift.cpp	/^float MeanShifter::profile_position_fukunaga(float val){$/;"	f	class:MeanShifter
+profile_position_fukunaga	src/mean_shift.h	/^	static float profile_position_fukunaga(float val);$/;"	p	class:MeanShifter
 profile_position_gaussian	src/mean_shift.cpp	/^float MeanShifter::profile_position_gaussian(float val){$/;"	f	class:MeanShifter
+profile_position_gaussian	src/mean_shift.h	/^	static float profile_position_gaussian(float val);$/;"	p	class:MeanShifter
 profile_position_unitball	src/mean_shift.cpp	/^float MeanShifter::profile_position_unitball(float val){$/;"	f	class:MeanShifter
-profile_position	src/mean_shift.h	/^		float (*profile_position)(float val);$/;"	m	class:MeanShifter
+profile_position_unitball	src/mean_shift.h	/^	static float profile_position_unitball(float val);$/;"	p	class:MeanShifter
+profile_position	src/mean_shift.h	/^	float (*profile_position)(float val);$/;"	m	class:MeanShifter
+require	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^  int require = 0;$/;"	l
+res_	src/mean_shift.cpp	/^				PosColor res_ = { (float)x, (float)y, r, g, b };$/;"	l
+reset	src/mean_shift.cpp	/^		work_.reset();$/;"	p	file:
+reset	src/mean_shift.cpp	/^		work_.reset(new boost::asio::io_service::work(io_service_));$/;"	p	file:
+result	src/mean_shift.cpp	/^	PosColor result = { 0, 0, 0, 0, 0 };$/;"	l
+result	src/mean_shift.cpp	/^	PosColor result;$/;"	l
+r	src/mean_shift.cpp	/^				float r = src.data[index * 3];$/;"	l
+r	src/mean_shift.cpp	/^			float r = src.data[index * 3];$/;"	l
 r	src/mean_shift.cpp	/^	float x, y, r, g, b;$/;"	m	struct:MeanShifter::PosColor	file:
 setBandWidth	src/mean_shift.cpp	/^void MeanShifter::setBandWidth(int Hs, int Hr) {$/;"	f	class:MeanShifter
+setBandWidth	src/mean_shift.h	/^	void setBandWidth(int Hs, int Hr);$/;"	p	class:MeanShifter
+setBandWidth	src/mshift.cpp	/^	shifter.setBandWidth(Hs, Hr);$/;"	p	file:
 setKernel	src/mean_shift.cpp	/^void MeanShifter::setKernel(MeanShifter::Kernel type){$/;"	f	class:MeanShifter
+setKernel	src/mean_shift.h	/^	void setKernel(Kernel type);$/;"	p	class:MeanShifter
+setKernel	src/mshift.cpp	/^	shifter.setKernel(kernel);$/;"	p	file:
+shifter	src/mshift.cpp	/^	MeanShifter shifter;$/;"	l
+src	src/mshift.cpp	/^	Mat src = imread(file_name);$/;"	l
+start_x	src/mean_shift.cpp	/^	int start_x = p.x - Hs_ < 0 ? 0 : p.x -Hs_;$/;"	l
+start_y	src/mean_shift.cpp	/^	int start_y = p.y - Hs_ < 0 ? 0 : p.y -Hs_;$/;"	l
+stop	src/mshift.cpp	/^	timer.stop();$/;"	p	file:
 thread_pool	src/mean_shift.cpp	/^class thread_pool {$/;"	c	file:
-thread_pool	src/mean_shift.cpp	/^		thread_pool(boost::asio::io_service& io_service, std::size_t size)$/;"	f	class:thread_pool
+thread_pool	src/mean_shift.cpp	/^	thread_pool(boost::asio::io_service& io_service, std::size_t size)$/;"	f	class:thread_pool
+thread	src/mshift.cpp	/^	int thread = lexical_cast<int>(argv[5]);$/;"	l
+timer	src/mshift.cpp	/^	timer::cpu_timer timer;$/;"	l
+total	src/mean_shift.cpp	/^	float total = 0;$/;"	l
 update_cood	src/mean_shift.cpp	/^MeanShifter::PosColor MeanShifter::update_cood(const PosColor &p, const Mat &src) {$/;"	f	class:MeanShifter
-work_	src/mean_shift.cpp	/^		boost::shared_ptr<boost::asio::io_service::work> work_;$/;"	m	class:thread_pool	file:
+update_cood	src/mean_shift.h	/^	PosColor update_cood(const PosColor &p, const cv::Mat &src);$/;"	p	class:MeanShifter
+work_	src/mean_shift.cpp	/^	boost::shared_ptr<boost::asio::io_service::work> work_;$/;"	m	class:thread_pool	file:
 x	src/mean_shift.cpp	/^	float x, y, r, g, b;$/;"	m	struct:MeanShifter::PosColor	file:
 y	src/mean_shift.cpp	/^	float x, y, r, g, b;$/;"	m	struct:MeanShifter::PosColor	file:
-~MeanShifter	src/mean_shift.h	/^		~MeanShifter() {$/;"	f	class:MeanShifter
-~thread_pool	src/mean_shift.cpp	/^		~thread_pool(){$/;"	f	class:thread_pool
+~MeanShifter	src/mean_shift.h	/^	~MeanShifter() {$/;"	f	class:MeanShifter
+~thread_pool	src/mean_shift.cpp	/^	~thread_pool(){$/;"	f	class:thread_pool

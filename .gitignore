@@ -1,2 +1,6 @@
 result/*
 build/*
+img/*
+*.taghl
+*.py
+backup/*
